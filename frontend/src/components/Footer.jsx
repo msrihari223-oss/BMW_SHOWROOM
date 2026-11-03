@@ -129,7 +129,7 @@ export default function Footer() {
 
         {/* Bottom Legal bar */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono gap-4">
-          <p>© 2026 Bayerische Motoren Werke AG (BMW) | M SRI HARI SAI ESWAR. All rights reserved.</p>
+          <p>© 2026 M SRI HARI SAI ESWAR. All rights reserved.</p>
           <div className="flex space-x-6 text-[11px]">
             <a href="#" className="hover:text-gray-300">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300">Terms of Service</a>

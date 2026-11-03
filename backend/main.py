@@ -47,7 +47,7 @@ if os.path.exists(assets_path):
 def read_root():
     index_file = os.path.join(dist_path, "index.html")
     if os.path.exists(index_file):
-        return FileResponse(index_file)
+        return FileResponse(index_file, headers={"Cache-Control": "no-cache, no-store, must-revalidate"})
     return {
         "brand": "BMW",
         "name": "Bayerische Motoren Werke AG",
