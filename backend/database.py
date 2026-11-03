@@ -201,8 +201,8 @@ class DatabaseManager:
             return
 
         try:
-            # Connect with short timeout
-            self.client = pymongo.MongoClient(MONGODB_URI, serverSelectionTimeoutMS=4000)
+            # Connect with resilient timeout for cloud Atlas
+            self.client = pymongo.MongoClient(MONGODB_URI, serverSelectionTimeoutMS=8000)
             self.client.admin.command('ping')
             self.db = self.client[DATABASE_NAME]
             self.is_connected = True
